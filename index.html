@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="align-items-center justify-content-center vh-100 d-flex">
+
+    <div id="game" class=" bg-white shadow p-4 rounded w-50 col-12 col-sm-8 col-md-5 col-xl-4">
+        <h1 id="qestion">Aqui va mi pregunta</h1>
+        <div id="answers" class="row gy-2 mx-0">
+
+
+        </div>
+
+        <div class="d-flex justify-content-between mt-4 alingn-items-center">
+            <p class="m-0">Pregunta <span id="current">1</span> de <span id="total">10</span></p>
+            <button onclick="nextQuestion()" type="button" class="btn btn-primary">Siguiente</button>
+
+        </div>
+    </div>
+
+    <div id="results" class="d-none bg-white shadow p-4 rounded w-50 col-12 col-sm-8 col-md-5 col-xl-4">
+        <p id="totalResult">El resultado es... 5/10</p>
+        <button onclick="reset()" type="button" class="btn btn-primary">Repetir Test</button>
+
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
